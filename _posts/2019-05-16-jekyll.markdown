@@ -1,0 +1,8 @@
+---
+layout: post
+title: "jekyll"
+thumbnail: https://picsum.photos/200
+categories: technology
+---
+
+Jekyll is a static site generator.

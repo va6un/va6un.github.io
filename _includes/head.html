@@ -1,0 +1,28 @@
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133734985-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133734985-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:image" content="{{ site.url }}{% if page.preview-img %}{{ page.preview-img }}{% endif %}" />
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
