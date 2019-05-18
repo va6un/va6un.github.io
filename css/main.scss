@@ -40,4 +40,8 @@ html, body{
     border-radius: 0;
 }
 
-
+@media (max-width: 840px){
+    .site-margin-top{
+        margin-top: 10px;
+    }
+}
