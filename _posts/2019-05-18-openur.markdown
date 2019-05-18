@@ -1,0 +1,8 @@
+---
+layout: post
+title: "openur"
+thumbnail: https://picsum.photos/200
+categories: technology
+---
+
+A browser extensio for chrome and firefox.

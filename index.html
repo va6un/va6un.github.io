@@ -9,25 +9,24 @@ layout: default
                 <!-- articles -->
                 <section class="site-articles">
                     <!-- books article -->
-                    <h5>Books read</h5>
+                    <h6 class="site-headings">savant zeit!</h6>
                     <div class="container">
                         <div class="columns">
                             {% assign posts = site.posts | where: "categories","book" %}
                             {% for post in posts %}
                             <div class="column col-6 col-md-12">
                                 <div class="tile site-border">
-                                    <div class="tile-icon">
+                                    <!-- <div class="tile-icon">
                                         <figure class="avatar avatar-xl" data-initial="av" style="background-color: #5755d9;">
                                             <img src="{{ post.thumbnail }}" alt="thumbnail">
                                         </figure>
-                                    </div>
+                                    </div> -->
                                     <div class="tile-content">
-                                        <p class="tile-title">{{ post.title }} <span>{{ post.date | date: "%b %-d,%Y"
-                                                }}</span></p>
-                                        <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p>
+                                        <p class="tile-title">{{ post.title }} </p>
+                                        <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
                                     </div>
                                     <div class="tile-action">
-                                        <a class="btn" href="{{ post.url | prepend: site.baseurl }}">read</a>
+                                        <a class="btn btn-sm" href="{{ post.url | prepend: site.baseurl }}">read</a>
                                     </div>
                                 </div>
                             </div>
@@ -37,7 +36,7 @@ layout: default
                     </div>
                     <!-- books article ends -->
                     <!-- tech article -->
-                    <h5>Tech</h5>
+                    <h6 class="site-headings">hello world!</h6>
                     <div class="container">
                         <div class="columns">
                             {% assign posts = site.posts | where: "categories","technology" %}
@@ -52,10 +51,10 @@ layout: default
                                     <div class="tile-content">
                                         <p class="tile-title">{{ post.title }} <span>{{ post.date | date: "%b %-d,%Y"
                                                 }}</span></p>
-                                        <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p>
+                                        <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
                                     </div>
                                     <div class="tile-action">
-                                        <a class="btn" href="{{ post.url | prepend: site.baseurl }}">read</a>
+                                        <a class="btn btn-sm" href="{{ post.url | prepend: site.baseurl }}">read</a>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +92,7 @@ layout: default
                     </ul>
                 </div>
                 <div class="contact email">
-                    Mail me @ <br>
+                    contact? mail @ <br>
                     <small>va6un[dot]b[at]gmail[dot]com</small>
                 </div>
             </section>
