@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "openur"
+title: "deploy-react-app-github"
 thumbnail: https://picsum.photos/200
 categories: technology
 ---
 
-A browser extensio for chrome and firefox.
+Deploying react app...

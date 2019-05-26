@@ -1,101 +1,144 @@
 ---
 layout: default
 ---
+
 <div class="container">
-    <div class="columns">
-        <div class="column col-9 col-md-12">
-            <!-- main -->
-            <section class="site-main">
-                <!-- articles -->
-                <section class="site-articles">
-                    <!-- books article -->
-                    <h6 class="site-headings">savant zeit!</h6>
-                    <div class="container">
-                        <div class="columns">
-                            {% assign posts = site.posts | where: "categories","book" %}
-                            {% for post in posts %}
-                            <div class="column col-6 col-md-12">
-                                <div class="tile site-border site-margin-top">
-                                    <!-- <div class="tile-icon">
+  <div class="columns">
+    <div class="column col-9 col-md-12">
+      <!-- main -->
+      <section class="site-main">
+        <!-- articles -->
+        <section class="site-articles">
+          <!-- books article -->
+          <h6 class="site-headings">savant zeit!</h6>
+          <div class="container">
+            <div class="columns">
+              {% assign posts = site.posts | where: "categories","book" %} {%
+              for post in posts %}
+              <div class="column col-6 col-md-12">
+                <div class="tile site-border site-margin-top">
+                  <!-- <div class="tile-icon">
                                         <figure class="avatar avatar-xl" data-initial="av" style="background-color: #5755d9;">
                                             <img src="{{ post.thumbnail }}" alt="thumbnail">
                                         </figure>
                                     </div> -->
-                                    <div class="tile-content">
-                                        <p class="tile-title">{{ post.title }} </p>
-                                        <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
-                                    </div>
-                                    <div class="tile-action">
-                                        <a class="btn btn-sm" href="{{ post.url | prepend: site.baseurl }}">read</a>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-
-                        </div>
-                    </div>
-                    <!-- books article ends -->
-                    <!-- tech article -->
-                    <h6 class="site-headings">hello world!</h6>
-                    <div class="container">
-                        <div class="columns">
-                            {% assign posts = site.posts | where: "categories","technology" %}
-                            {% for post in posts %}
-                            <div class="column col-4 col-md-12">
-                                <div class="tile site-border site-margin-top">
-                                    <div class="tile-icon">
-                                        <figure class="avatar avatar-xl" data-initial="av" style="background-color: #5755d9;">
-                                            <img src="{{ post.thumbnail }}" alt="thumbnail">
-                                        </figure>
-                                    </div>
-                                    <div class="tile-content">
-                                        <p class="tile-title">{{ post.title }} <span>{{ post.date | date: "%b %-d,%Y"
-                                                }}</span></p>
-                                        <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
-                                    </div>
-                                    <div class="tile-action">
-                                        <a class="btn btn-sm" href="{{ post.url | prepend: site.baseurl }}">read</a>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-
-                        </div>
-                    </div>
-                    <!-- tech articles end -->
-                </section>
-                <!-- article ends -->
-
-            </section>
-            <!-- main ends -->
-        </div>
-        <div class="column col-3 col-md-12">
-            <!-- links -->
-            <section class="site-sidebar">
-                <div class="mt-2">
-                    <h6>Extensions/addons</h6>
-                    <ul class="site-list-style">
-                        <li><img class="avatar avatar-xs site-bg-white site-vertical-align" src="img/openUR.svg" alt="">OpenUR</li>
-
-                        <ul class="site-list-style">
-                            <a href="https://chrome.google.com/webstore/detail/openur/mlnmaaccnkjclggckjinhjklladegpdd"
-                                target="_blank">
-                                <li><img class="avatar avatar-xs site-bg-white site-vertical-align" src="img/chrome.svg"
-                                        alt=""><span class="px-2">openUR - chrome</span></li>
-                            </a>
-                            <a href="https://addons.mozilla.org/en-US/firefox/addon/openur" target="_blank">
-                                <li><img class="avatar avatar-xs site-bg-white site-vertical-align" src="img/firefox.svg"
-                                        alt=""><span class="px-2">openUR - firefox</span></li>
-                            </a>
-                        </ul>
-
-                    </ul>
+                  <div class="tile-content">
+                    <p class="tile-title">{{ post.title }}</p>
+                    <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
+                  </div>
+                  <div class="tile-action">
+                    <a
+                      class="btn btn-sm"
+                      href="{{ post.url | prepend: site.baseurl }}"
+                      >read</a
+                    >
+                  </div>
                 </div>
-                <div class="contact email">
-                    contact? mail @ <br>
-                    <small>va6un[dot]b[at]gmail[dot]com</small>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          <!-- books article ends -->
+          <!-- tech article -->
+          <h6 class="site-headings">hello world!</h6>
+          <div class="container">
+            <div class="columns">
+              {% assign posts = site.posts | where: "categories","technology" %}
+              {% for post in posts %}
+              <div class="column col-4 col-md-12">
+                <div class="tile site-border site-margin-top">
+                  <div class="tile-icon">
+                    <figure
+                      class="avatar avatar-xl"
+                      data-initial="av"
+                      style="background-color: #5755d9;"
+                    >
+                      <img src="{{ post.thumbnail }}" alt="thumbnail" />
+                    </figure>
+                  </div>
+                  <div class="tile-content">
+                    <p class="tile-title">
+                      {{ post.title }}
+                      <span>{{ post.date | date: "%b %-d,%Y" }}</span>
+                    </p>
+                    <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
+                  </div>
+                  <div class="tile-action">
+                    <a
+                      class="btn btn-sm"
+                      href="{{ post.url | prepend: site.baseurl }}"
+                      >read</a
+                    >
+                  </div>
                 </div>
-            </section>
-        </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          <!-- tech articles end -->
+        </section>
+        <!-- article ends -->
+      </section>
+      <!-- main ends -->
     </div>
+    <div class="column col-3 col-md-12">
+      <!-- links -->
+      <section class="site-sidebar">
+        <div class="mt-2">
+          <h6>Extensions/addons</h6>
+          <ul class="site-list-style">
+            <li>
+              <img
+                class="avatar avatar-xs site-bg-white site-vertical-align"
+                src="img/openUR.svg"
+                alt=""
+              />OpenUR
+            </li>
+
+            <ul class="site-list-style">
+              <a
+                href="https://chrome.google.com/webstore/detail/openur/mlnmaaccnkjclggckjinhjklladegpdd"
+                target="_blank"
+              >
+                <li>
+                  <img
+                    class="avatar avatar-xs site-bg-white site-vertical-align"
+                    src="img/chrome.svg"
+                    alt=""
+                  /><span class="px-2">openUR - chrome</span>
+                </li>
+              </a>
+              <a
+                href="https://addons.mozilla.org/en-US/firefox/addon/openur"
+                target="_blank"
+              >
+                <li>
+                  <img
+                    class="avatar avatar-xs site-bg-white site-vertical-align"
+                    src="img/firefox.svg"
+                    alt=""
+                  /><span class="px-2">openUR - firefox</span>
+                </li>
+              </a>
+            </ul>
+          </ul>
+        </div>
+        <div>
+          <h6>Works!</h6>
+          <ul class="site-list-style">
+            <a href="https://va6un.github.io/ritu/" target="_blank">
+              <li><span class="px-2">ritu</span></li>
+            </a>
+            <a href="https://va6un.github.io/histograph/" target="_blank">
+              <li><span class="px-2">HistoGraph</span></li>
+            </a>
+          </ul>
+        </div>
+        <div class="contact email">
+          contact? mail @ <br />
+          <small>va6un[dot]b[at]gmail[dot]com</small>
+        </div>
+      </section>
+    </div>
+  </div>
 </div>
