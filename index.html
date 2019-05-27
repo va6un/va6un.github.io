@@ -2,11 +2,48 @@
 layout: default
 ---
 
-<div class="">
+<div class="container-fluid">
   <div class="columns">
     <div class="column col-9 col-md-12">
       <!-- main -->
       <section class="site-main">
+        <!-- tech article -->
+        <h6 class="site-headings">hello world!</h6>
+        <div class="">
+          <div class="columns">
+            {% assign posts = site.posts | where: "categories","technology" %}
+            {% for post in posts %}
+            <div class="column col-4 col-md-12">
+              <div class="tile site-border site-margin-top">
+                <div class="tile-icon">
+                  <!-- <figure
+                      class="avatar avatar-xl"
+                      data-initial="av"
+                      style="background-color: #5755d9;"
+                    >
+                      <img src="{{ post.thumbnail }}" alt="thumbnail" />
+                    </figure> -->
+                </div>
+                <div class="tile-content">
+                  <p class="tile-title">
+                    {{ post.title }}
+                    <span>{{ post.date | date: "%b %-d,%Y" }}</span>
+                  </p>
+                  <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
+                </div>
+                <div class="tile-action">
+                  <a
+                    class="btn btn-sm"
+                    href="{{ post.url | prepend: site.baseurl }}"
+                    >read</a
+                  >
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- tech articles end -->
         <!-- articles -->
         <section class="site-articles">
           <!-- books article -->
@@ -18,10 +55,10 @@ layout: default
               <div class="column col-6 col-md-12">
                 <div class="tile site-border site-margin-top">
                   <!-- <div class="tile-icon">
-                                        <figure class="avatar avatar-xl" data-initial="av" style="background-color: #5755d9;">
-                                            <img src="{{ post.thumbnail }}" alt="thumbnail">
-                                        </figure>
-                                    </div> -->
+                                                  <figure class="avatar avatar-xl" data-initial="av" style="background-color: #5755d9;">
+                                                      <img src="{{ post.thumbnail }}" alt="thumbnail">
+                                                  </figure>
+                                              </div> -->
                   <div class="tile-content">
                     <p class="tile-title">{{ post.title }}</p>
                     <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
@@ -39,43 +76,6 @@ layout: default
             </div>
           </div>
           <!-- books article ends -->
-          <!-- tech article -->
-          <h6 class="site-headings">hello world!</h6>
-          <div class="">
-            <div class="columns">
-              {% assign posts = site.posts | where: "categories","technology" %}
-              {% for post in posts %}
-              <div class="column col-4 col-md-12">
-                <div class="tile site-border site-margin-top">
-                  <div class="tile-icon">
-                    <figure
-                      class="avatar avatar-xl"
-                      data-initial="av"
-                      style="background-color: #5755d9;"
-                    >
-                      <img src="{{ post.thumbnail }}" alt="thumbnail" />
-                    </figure>
-                  </div>
-                  <div class="tile-content">
-                    <p class="tile-title">
-                      {{ post.title }}
-                      <span>{{ post.date | date: "%b %-d,%Y" }}</span>
-                    </p>
-                    <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
-                  </div>
-                  <div class="tile-action">
-                    <a
-                      class="btn btn-sm"
-                      href="{{ post.url | prepend: site.baseurl }}"
-                      >read</a
-                    >
-                  </div>
-                </div>
-              </div>
-              {% endfor %}
-            </div>
-          </div>
-          <!-- tech articles end -->
         </section>
         <!-- article ends -->
       </section>

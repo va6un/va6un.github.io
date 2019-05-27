@@ -14,8 +14,16 @@ html,
 body {
   font-family: "Special Elite", cursive;
 }
+pre {
+  overflow-x: auto;
+}
 .container {
   max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.container-fluid {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
 }
