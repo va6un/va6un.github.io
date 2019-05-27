@@ -1,47 +1,52 @@
 ---
-
 ---
 
 @font-face {
-    font-family: 'Chilanka';
-    src: 
-        url('../fonts/Chilanka-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-        url('../fonts/Chilanka-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-        url('../fonts/Chilanka-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-    }
-
-html, body{
-    font-family: 'Special Elite', cursive;
+  font-family: "Chilanka";
+  src: url("../fonts/Chilanka-Regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Chilanka-Regular.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/Chilanka-Regular.ttf")
+      format("truetype"); /* Safari, Android, iOS */
 }
 
-.ml-font{
-    font-family: 'Chilanka';
+html,
+body {
+  font-family: "Special Elite", cursive;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.ml-font {
+  font-family: "Chilanka";
 }
 
-.site-border{
-    border: 0;
-    box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
+.site-border {
+  border: 0;
+  box-shadow: 0 0.25rem 1rem rgba(48, 55, 66, 0.15);
 }
-.site-bg-white{
-    background: #fff;
+.site-bg-white {
+  background: #fff;
 }
-.site-list-style{
-    list-style: none;
+.site-list-style {
+  list-style: none;
 }
-.site-vertical-align{
-    vertical-align: text-bottom;
+.site-vertical-align {
+  vertical-align: text-bottom;
 }
 .site-headings {
-    border-bottom: 1px solid #e3e3e3;
-    display: inline-block;
-    margin: 20px 0 10px 0;
+  border-bottom: 1px solid #e3e3e3;
+  display: inline-block;
+  margin: 20px 0 10px 0;
 }
-.site-border-radius-0{
-    border-radius: 0;
+.site-border-radius-0 {
+  border-radius: 0;
 }
 
-@media (max-width: 840px){
-    .site-margin-top{
-        margin-top: 10px;
-    }
+@media (max-width: 840px) {
+  .site-margin-top {
+    margin-top: 10px;
+  }
 }
