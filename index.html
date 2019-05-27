@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="container">
+<div class="">
   <div class="columns">
     <div class="column col-9 col-md-12">
       <!-- main -->
@@ -11,7 +11,7 @@ layout: default
         <section class="site-articles">
           <!-- books article -->
           <h6 class="site-headings">savant zeit!</h6>
-          <div class="container">
+          <div class="">
             <div class="columns">
               {% assign posts = site.posts | where: "categories","book" %} {%
               for post in posts %}
@@ -41,7 +41,7 @@ layout: default
           <!-- books article ends -->
           <!-- tech article -->
           <h6 class="site-headings">hello world!</h6>
-          <div class="container">
+          <div class="">
             <div class="columns">
               {% assign posts = site.posts | where: "categories","technology" %}
               {% for post in posts %}
