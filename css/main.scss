@@ -1,6 +1,7 @@
 ---
 ---
 
+@import url("https://fonts.googleapis.com/css?family=Lekton&display=swap");
 @import url("spectre.min.css");
 @import url("colorful.css");
 @font-face {
@@ -15,15 +16,15 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: #777;
+  color: rgb(85, 51, 68);
   word-break: break-word;
 }
 html,
 body {
-  font-family: "Special Elite", cursive;
+  font-family: "Lekton", sans-serif;
   word-spacing: 1px;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 17px;
 }
 pre {
   overflow-x: auto;
@@ -42,7 +43,7 @@ a:visited {
 .container-fluid {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 10px 30px;
 }
 .ml-font {
   font-family: "Chilanka";
@@ -65,6 +66,7 @@ a:visited {
   border-bottom: 1px solid #e3e3e3;
   display: inline-block;
   margin: 20px 0 10px 0;
+  font-weight: 600;
 }
 .site-border-radius-0 {
   border-radius: 0;
@@ -73,27 +75,35 @@ code {
   background: #807fe2;
   color: #fff;
 }
-.site-margin-top {
+.site-card {
+  padding: 0.4rem;
   margin-top: 10px;
-}
-.page-title {
-  border-bottom: 1px solid #777;
-  display: inline-block;
-  margin-bottom: 2em;
-  padding-bottom: 0.2em;
 }
 .small {
   font-size: 0.9em;
   font-style: italic;
-  color: #807fe2;
+  color: #5755d9;
 }
 .highlight code {
-  font-family: "Special Elite", cursive;
+  font-family: "Lekton", sans-serif;
   background-color: inherit;
   color: inherit;
+}
+.site-brand {
+  margin-bottom: 0;
+  font-size: 1.4em;
+}
+.main-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 3px 2px -2px hsla(0, 0%, 78.4%, 0.2);
 }
 @media (max-width: 840px) {
   .site-margin-top {
     margin-top: 10px;
+  }
+  .site-brand {
+    font-size: 0.87em;
   }
 }

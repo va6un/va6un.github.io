@@ -8,13 +8,13 @@ layout: default
       <!-- main -->
       <section class="site-main">
         <!-- tech article -->
-        <h6 class="site-headings">hello world!</h6>
+        <h5 class="site-headings">hello world!</h5>
         <div class="">
           <div class="columns">
             {% assign posts = site.posts | where: "categories","technology" %}
             {% for post in posts %}
             <div class="column col-4 col-md-12">
-              <div class="tile site-border site-margin-top">
+              <div class="tile site-border site-card">
                 <div class="tile-icon">
                   <!-- <figure
                       class="avatar avatar-xl"
@@ -49,13 +49,13 @@ layout: default
         <!-- articles -->
         <section class="site-articles">
           <!-- books article -->
-          <h6 class="site-headings">savant zeit!</h6>
+          <h5 class="site-headings">savant zeit!</h5>
           <div class="">
             <div class="columns">
               {% assign posts = site.posts | where: "categories","book" %} {%
               for post in posts %}
               <div class="column col-6 col-md-12">
-                <div class="tile site-border site-margin-top">
+                <div class="tile site-border site-card">
                   <!-- <div class="tile-icon">
                                                   <figure class="avatar avatar-xl" data-initial="av" style="background-color: #5755d9;">
                                                       <img src="{{ post.thumbnail }}" alt="thumbnail">
@@ -87,7 +87,7 @@ layout: default
       <!-- links -->
       <section class="site-sidebar">
         <div class="mt-2">
-          <h6>Extensions/addons</h6>
+          <h5 class="site-headings">Extensions/addons</h5>
           <ul class="site-list-style">
             <li>
               <img
@@ -126,7 +126,7 @@ layout: default
           </ul>
         </div>
         <div>
-          <h6>Works!</h6>
+          <h5 class="site-headings">Works!</h5>
           <ul class="site-list-style">
             <a href="https://va6un.github.io/ritu/" target="_blank">
               <li><span class="px-2 small">ritu</span></li>
@@ -137,7 +137,7 @@ layout: default
           </ul>
         </div>
         <div class="contact email">
-          contact? mail @ <br />
+          <h5 class="site-headings" >contact<span class="small">?</span> mail<span class="small">@</span></h5>
           <spam class="small">va6un[dot]b[at]gmail[dot]com</span>
         </div>
       </section>
