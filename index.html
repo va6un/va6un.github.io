@@ -27,7 +27,9 @@ layout: default
                 <div class="tile-content">
                   <p class="tile-title">
                     {{ post.title }}
-                    <span>{{ post.date | date: "%b %-d,%Y" }}</span>
+                    <span class="small">{{
+                      post.date | date: " %b %d, %Y"
+                    }}</span>
                   </p>
                   <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
                 </div>
@@ -105,7 +107,7 @@ layout: default
                     class="avatar avatar-xs site-bg-white site-vertical-align"
                     src="img/chrome.svg"
                     alt=""
-                  /><span class="px-2">openUR - chrome</span>
+                  /><span class="px-2 small">openUR - chrome</span>
                 </li>
               </a>
               <a
@@ -117,7 +119,7 @@ layout: default
                     class="avatar avatar-xs site-bg-white site-vertical-align"
                     src="img/firefox.svg"
                     alt=""
-                  /><span class="px-2">openUR - firefox</span>
+                  /><span class="px-2 small">openUR - firefox</span>
                 </li>
               </a>
             </ul>
@@ -127,16 +129,16 @@ layout: default
           <h6>Works!</h6>
           <ul class="site-list-style">
             <a href="https://va6un.github.io/ritu/" target="_blank">
-              <li><span class="px-2">ritu</span></li>
+              <li><span class="px-2 small">ritu</span></li>
             </a>
             <a href="https://va6un.github.io/histograph/" target="_blank">
-              <li><span class="px-2">HistoGraph</span></li>
+              <li><span class="px-2 small">HistoGraph</span></li>
             </a>
           </ul>
         </div>
         <div class="contact email">
           contact? mail @ <br />
-          <small>va6un[dot]b[at]gmail[dot]com</small>
+          <spam class="small">va6un[dot]b[at]gmail[dot]com</span>
         </div>
       </section>
     </div>

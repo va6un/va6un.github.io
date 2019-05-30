@@ -1,6 +1,8 @@
 ---
 ---
 
+@import url("spectre.min.css");
+@import url("colorful.css");
 @font-face {
   font-family: "Chilanka";
   src: url("../fonts/Chilanka-Regular.woff2") format("woff2"),
@@ -9,13 +11,28 @@
     /* Pretty Modern Browsers */ url("../fonts/Chilanka-Regular.ttf")
       format("truetype"); /* Safari, Android, iOS */
 }
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #777;
+  word-break: break-word;
+}
 html,
 body {
   font-family: "Special Elite", cursive;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 pre {
   overflow-x: auto;
+}
+a {
+  color: #5755d9;
+}
+a:visited {
+  color: #807fe2;
 }
 .container {
   max-width: 900px;
@@ -52,7 +69,29 @@ pre {
 .site-border-radius-0 {
   border-radius: 0;
 }
-
+code {
+  background: #807fe2;
+  color: #fff;
+}
+.site-margin-top {
+  margin-top: 10px;
+}
+.page-title {
+  border-bottom: 1px solid #777;
+  display: inline-block;
+  margin-bottom: 2em;
+  padding-bottom: 0.2em;
+}
+.small {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #807fe2;
+}
+.highlight code {
+  font-family: "Special Elite", cursive;
+  background-color: inherit;
+  color: inherit;
+}
 @media (max-width: 840px) {
   .site-margin-top {
     margin-top: 10px;
