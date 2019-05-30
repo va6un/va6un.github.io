@@ -35,6 +35,9 @@ a {
 a:visited {
   color: #807fe2;
 }
+a:hover {
+  text-decoration: none;
+}
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -44,6 +47,9 @@ a:visited {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 30px;
+}
+.tile-title {
+  text-transform: capitalize;
 }
 .ml-font {
   font-family: "Chilanka";
@@ -67,6 +73,7 @@ a:visited {
   display: inline-block;
   margin: 20px 0 10px 0;
   font-weight: 600;
+  text-transform: capitalize;
 }
 .site-border-radius-0 {
   border-radius: 0;

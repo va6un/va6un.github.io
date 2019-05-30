@@ -7,7 +7,7 @@ categories: technology
 
 This blog is created using jekyll and hosted in github. To create static webpages jekyll is a nice option. To use jekyll and generate webpage first we need to install jekyll on our system. The installation is a straight forward one on an ubuntu machine. I am using Ubuntu 18.04 and the installation procedure for all supported OS's can be found [here](https://jekyllrb.com/docs/installation/). For [installing jekyll on an ubuntu machine](https://jekyllrb.com/docs/installation/ubuntu/) run these on terminal
 
-Need these dependencies before jekyll installation]
+Need these dependencies before jekyll installation
 
 ```shell
 sudo apt-get install ruby-full build-essential zlib1g-dev
@@ -17,19 +17,13 @@ sudo apt-get install ruby-full build-essential zlib1g-dev
 sudo apt-get install ruby-full build-essential zlib1g-dev
 ```
 
-Add the environment variables to `~/.bashrc`<br/>
+Add the environment variables to `~/.bashrc` by executing this
 
 ```shell
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="\$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
-```
-
-```shell
-echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
-echo 'export GEM_HOME="\$HOME/gems"' >> ~/.bashrc
-echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 ```
 
 Install jekyll by `gem install` command
@@ -47,15 +41,15 @@ jekyll new sample-site
 To create a new site from scratch all we need is a `_config.yml`. So create a file named `_config.yml` and add some these datas, in which site settings are needed for site meta data details and build settings are for as name suggests build!
 
 ```yaml
-#Site settings<br/>
-title: <title><br/>
-email: <email><br/>
-description: <description><br/>
-url: <site_url><br/>
-author: <author_name><br/>
-#Build settings<br/>
-markdown: kramdown<br/>
-permalink: /:title<br/>
+#Site settings
+title: <title>
+email: <email>
+description: <description>
+url: <site_url>
+author: <author_name>
+#Build settings
+markdown: kramdown
+permalink: /:title
 ```
 
 The `jekyll serve` command will start the development server and the site can be viewd at `localhost:4000`.

@@ -14,24 +14,17 @@ layout: default
             {% assign posts = site.posts | where: "categories","technology" %}
             {% for post in posts %}
             <div class="column col-4 col-md-12">
+              
               <div class="tile site-border site-card">
-                <div class="tile-icon">
-                  <!-- <figure
-                      class="avatar avatar-xl"
-                      data-initial="av"
-                      style="background-color: #5755d9;"
-                    >
-                      <img src="{{ post.thumbnail }}" alt="thumbnail" />
-                    </figure> -->
-                </div>
                 <div class="tile-content">
+                  <a href="{{ post.url | prepend: site.baseurl }}">
                   <p class="tile-title">
-                    {{ post.title }}
+                    {{ post.title }} - 
                     <span class="small">{{
                       post.date | date: " %b %d, %Y"
                     }}</span>
                   </p>
-                  <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
+                  </a>
                 </div>
                 <div class="tile-action">
                   <a
@@ -41,6 +34,8 @@ layout: default
                   >
                 </div>
               </div>
+
+
             </div>
             {% endfor %}
           </div>
@@ -56,14 +51,10 @@ layout: default
               for post in posts %}
               <div class="column col-6 col-md-12">
                 <div class="tile site-border site-card">
-                  <!-- <div class="tile-icon">
-                                                  <figure class="avatar avatar-xl" data-initial="av" style="background-color: #5755d9;">
-                                                      <img src="{{ post.thumbnail }}" alt="thumbnail">
-                                                  </figure>
-                                              </div> -->
                   <div class="tile-content">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
                     <p class="tile-title">{{ post.title }}</p>
-                    <!-- <p class="tile-subtitle">{{ post.content | strip_html | truncatewords:10 }}</p> -->
+                    </a>
                   </div>
                   <div class="tile-action">
                     <a
