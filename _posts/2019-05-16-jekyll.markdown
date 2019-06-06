@@ -5,7 +5,7 @@ thumbnail: https://picsum.photos/200
 categories: technology
 ---
 
-This blog is created using jekyll and hosted in github. To create static webpages jekyll is a nice option. To use jekyll and generate webpage first we need to install jekyll on our system. The installation is a straight forward one on an ubuntu machine. I am using Ubuntu 18.04 and the installation procedure for all supported OS's can be found [here](https://jekyllrb.com/docs/installation/). For [installing jekyll on an ubuntu machine](https://jekyllrb.com/docs/installation/ubuntu/) run these on terminal
+This blog is created using jekyll and [hosted](https://pages.github.com/) in github. To create static webpages jekyll is a nice option. To use jekyll and generate webpage first we need to install jekyll on our system. The installation is a straight forward one on an ubuntu machine. I am using Ubuntu 18.04 and the installation procedure for all supported OS's can be found [here](https://jekyllrb.com/docs/installation/). For [installing jekyll on an ubuntu machine](https://jekyllrb.com/docs/installation/ubuntu/) run these on terminal
 
 Need these dependencies before jekyll installation
 
@@ -38,7 +38,7 @@ To create a boiler plate site
 jekyll new sample-site
 ```
 
-To create a new site from scratch all we need is a `_config.yml`. So create a file named `_config.yml` and add some these datas, in which site settings are needed for site meta data details and build settings are for as name suggests build!
+To create a new site from scratch all we need is a `_config.yml`. So create a file named `_config.yml` and add some these data, in which are needed for build and settings.
 
 ```yaml
 #Site settings
@@ -52,4 +52,5 @@ markdown: kramdown
 permalink: /:title
 ```
 
-The `jekyll serve` command will start the development server and the site can be viewd at `localhost:4000`.
+The `jekyll serve` command will start the development server and the site can be viewed at `localhost:4000`.
+The entire repo can be viewed at [https://github.com/va6un/va6un.github.io](https://github.com/va6un/va6un.github.io).

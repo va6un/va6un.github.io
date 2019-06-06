@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "some React-ions!"
+title: "how to react!"
 thumbnail: https://picsum.photos/200
 categories: technology
 ---
 
-The best way to start a rect app is by using the `create-react-app` module. The installation steps are from react [doumentation](https://facebook.github.io/create-react-app/docs/getting-started). So to install the module
+The best way to start a rect app is by using the `create-react-app` module. The installation steps are from react [documentation](https://facebook.github.io/create-react-app/docs/getting-started). So to install the module
 
 ```shell
 npm install create-react-app
@@ -23,7 +23,8 @@ To start the app, from the project folder run the `npm start`, which servers the
 npm start
 ```
 
-As a starter the `src/App.js` is the place to start. 
+As a starter the `src/App.js` is the place to start.
+
 ```shell
 ├── node_modules
 ├── package.json
@@ -33,23 +34,8 @@ As a starter the `src/App.js` is the place to start.
 └── src
 ```
 
-For creating a new component, say `<Home /> within `App.js`
+I have a github repo [react-boilerplate](https://github.com/va6un/react-boilerplate) which is having some of the boilerplate code which I have compiled to learn React. Also created a `gist` for the components.
 
-```jsx
-const Home = () => {
-  return <div>Home component!</div>;
-};
-```
+<script src="https://gist.github.com/va6un/72721dadc51010f787232ad290c2b56d.js"></script>
 
-We will create a component `<Example/>` with class [Hooks](https://reactjs.org/docs/hooks-effect.html) and without using a `class`.
-
-continue...
-
-
-
-
-
-
-
-
-
+Hope this might help. Also point out issues and improvements. Will keep updating.
