@@ -38,4 +38,8 @@ I have a github repo [react-boilerplate](https://github.com/va6un/react-boilerpl
 
 <script src="https://gist.github.com/va6un/72721dadc51010f787232ad290c2b56d.js"></script>
 
+Redux, formik, protected-route gist
+
+<script src="https://gist.github.com/va6un/29d3419d6b8104e7b9cd234eb7528222.js"></script>
+
 Hope this might help. Also point out issues and improvements. Will keep updating.
