@@ -119,7 +119,10 @@ code {
   width: 100%;
   height: 100%;
 }
-
+.img-full {
+  width: 100%;
+  pointer-events: none;
+}
 @media (max-width: 840px) {
   .site-margin-top {
     margin-top: 10px;
