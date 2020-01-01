@@ -1,31 +1,24 @@
-<header class="navbar container-fluid main-header">
-  <section class="navbar-section">
-    <!-- <a href="..." class="navbar-brand mr-2">Spectre.css</a> -->
-    <h1 class="site-brand">
-      <a href="{{ site.url }}" class="mr-2">{{ site.title }}</a>
-    </h1>
-
-    <!-- <a href="contact" class="btn btn-link">Contact</a> -->
-    <!-- <a href="..." class="btn btn-link">GitHub</a> -->
-    <a class="px-2" href="http://facebook.com/va6un" target="_blank"
-      ><img
-        class="avatar avatar-sm site-bg-white site-vertical-alig site-border-radius-0"
-        src="img/facebook-square.svg"
-        alt=""
-    /></a>
-
-    <a class="px-2" href="https://twitter.com/va6un" target="_blank"
-      ><img
-        class="avatar avatar-sm site-bg-white site-vertical-alig site-border-radius-0"
-        src="img/twitter-square.svg"
-        alt=""
-    /></a>
-
-    <a class="px-2" href="https://github.com/va6un" target="_blank"
-      ><img
-        class="avatar avatar-sm site-bg-white site-vertical-align site-border-radius-0"
-        src="img/github.svg"
-        alt=""
-    /></a>
-  </section>
+<header class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <h1 class="">
+      <!-- <a href="{{ site.url }}">{{ site.title }}</a> -->
+     </h1>
+    <!-- <p>
+    <span class="reserved">char</span> nick[<span class="number">9</span>] = <span class="string">"{{ site.nick }}"</span>;
+    </p>
+    <p>
+    printf(<a href="https://{{ site.source_code.server }}/{{ site.source_code.nick }}" target="_blank"><span class="string">"https://{{ site.source_code.server }}/<span class="reserved">%s\n</span>"</span></a>,nick);
+    </p>
+    <p>
+    printf(<span class="string">"<span class="reserved">%s\x40</span>{{ site.mail.domain }}<span class="reserved">\x2e\\\b</span>{{ site.mail.ext }}<span class="reserved">\n</span>"</span>,nick);
+    </p> -->
+    <!-- <p>
+            printf(<a href="https://{{ site.blog.nick }}.{{ site.blog.server }}" target="_blank"><span class="string">"https://<span class="reserved">%s</span>.{{ site.blog.server }}<span class="reserved">\n</span>"</span></a>,nick);
+        </p> -->
+    <!-- <p>
+    puts(<a href="{{ site.baseurl }}misc/pubkey.gpg.txt" target="_blank"><span class="string">"5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"</span></a>);
+    </p> -->
+  </div>
 </header>
+
+{% include menu.html %}

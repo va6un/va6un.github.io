@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html>
-    {% include head.html %}
+<html lang="pt">
+
+  {% include head.html %}
+
     <body>
+      <div class="container">
+
         {% include header.html %}
 
-        {{ content }}
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <main>
+            {{ content }}
+            </main>
+          </div>
+        </div>
 
         {% include footer.html %}
 
-        {% include scripts.html %}
+      </div>
     </body>
 </html>

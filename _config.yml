@@ -1,24 +1,12 @@
-# Command
-# export GEM_HOME=$HOME/gems
-# jekyll serve
-
 # Site settings
-title: va6un.github.io
+title: note book!
 email: va6un.b@gmail.com
-description: Blog!!!
+description: Personal Blog!!!
 url: https://va6un.github.io
 author: Varun Bhuvanendran
+footer: va6un.github.com
 
 # Build settings
 markdown: kramdown
-permalink: /:title
+permalink: /:categories/:title/
 highlighter: rouge
-
-# Defaults settings
-defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      author: Varun Bhuvanendran
-      layout: "post"

@@ -2,6 +2,5 @@
 
 ## jekyl commands
 ```bash
-export GEM_HOME=$HOME/gems
 jekyll serve
 ```

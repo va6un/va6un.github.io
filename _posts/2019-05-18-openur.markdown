@@ -1,8 +1,0 @@
----
-layout: post
-title: "openUR"
-thumbnail: https://picsum.photos/200
-categories: technology
----
-
-[openUR](https://github.com/va6un), spelled `opener!` is an browser extension for [firefox](https://addons.mozilla.org/en-US/firefox/addon/openur/) and [chrome](https://chrome.google.com/webstore/detail/openur/mlnmaaccnkjclggckjinhjklladegpdd). It's a small extension that I created to learn js and how to create an extension!. I found it useful in some instances. And i think with some more works it can be a pretty useful one. Try it, may be suggestions(criticism hearty welcomed :p). Check out for more updates in future.
