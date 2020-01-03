@@ -18,3 +18,5 @@ and enter the name starting with `SAPMZ`. Check the `TOP Include`.
 > Uncomment and create the `PAI`, `PBO` and `Form` includes.
 
 > Create Transaction code -> Right click the program name, create `Transactions`. Check `Program and screen(Dialog transaction)`. Provide the program name and the initial screen number.
+
+> Demo program `DEMO_DYNPRO_TABCONT_LOOP_AT` - Table control with loop at ITAB
