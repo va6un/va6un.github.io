@@ -48,7 +48,12 @@ permalink: /:categories/:title/
 highlighter: rouge
 ~~~ -->
 
-# Blog
+
+<div style="width:100%;text-align:right;">
+    <a href="{{ site.url }}/category/" title="Category List">Category List</a>
+    |
+    <a href="{{ site.url }}/feed/" title="Atom Feed Posts">Atom Feed</a>
+</div>
 <ul class="posts">
     {% for post in site.categories.blog %}
         <li>
