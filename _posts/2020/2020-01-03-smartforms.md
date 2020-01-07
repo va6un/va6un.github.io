@@ -17,6 +17,7 @@ that we need to import.
 * Logo - `SE78` -> Import BMP.
 * To find the fun: module name: Environment -> Function Module Name.
 
+
 ~~~abap
 IT_TAB - LIKE - Associated_Type
 ~~~
