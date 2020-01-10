@@ -117,15 +117,170 @@ console.log(0 !== '0'); // true. Check the data type.
 #### Function binding
 ~~~js
 var person = {
-    firstName: "Hello",
-    lastName: "World"
+    firstName: "Tom",
+    lastName: "Jerry"
 };
 
-// Bind function to 'person' object
+// Bind the 'person' object to this function.
+// we can use the 'person' object inside this function.
 var func_1 = function(){
     'use strict';
     return this.firstName;
 }.bind(person);
 
-func_1(); // "Hello"
+func_1(); // "Tom"
+~~~
+
+#### Arrow Function
+~~~js
+var func_2 = () => {
+    console.log("This is an Arrow function!");
+}
+~~~
+
+#### Condition
+~~~js
+var a = 10;
+var b = 9;
+a > b ? console.log("a is greater") : console.log("a is less!");
+~~~
+
+#### Loop
+~~~js
+var list = ["apple", "banana", "carrot"];
+var list = ["apple", "banana", "carrot"];
+
+// foreach()
+list.forEach(function(item, index){
+    console.log(index, " : ", item);
+});
+
+// arrow function
+list.forEach((item, index) => {
+    console.log(index, " : ", item);
+});
+
+// for()
+for(var index = 0; index < list.length; index++){
+    console.log(index, " :", list[index]);
+}
+~~~
+
+#### Delay
+~~~js
+var printFile = function(){
+    setTimeout(function(){
+        console.log("File is printed!");
+    }, 3000);
+}
+printFile();
+~~~
+
+#### Sync
+~~~js
+var printFile = function(){
+    setTimeout(function(){
+        return("File is printed!");
+    }, 3000);
+}
+var job = printFile();
+console.log(job);
+/*
+what we desired is that, console.log(job) should print 'File is printed!' after 
+3 sec. But the js code is syn:, so it will immediately return 'undefined', as there is no return value.
+But actually the printFile() returns value only after 3 sec.
+*/
+~~~
+
+#### Promise
+~~~js
+new Promise(function(resolve, reject){
+    resolve(value); // success
+    reject(error_message); // failure
+});
+~~~
+
+~~~js
+var printFile = function(){
+    return new Promise(function(resolve, reject){
+        setTimeout(function(){
+            resolve("File is printed!"); // success
+            // reject("Fail"); // Failure
+        }, 3000);
+    });
+};
+
+printFile().then(function(result){
+    console.log(result);
+}).catch(function(error){
+    console.log(error);
+});
+
+// chain
+printFile().then(function(result){
+    console.log(result);
+    printFile().then(function(result){
+        console.log(result);
+    }).catch();
+}).catch();
+~~~
+
+#### async
+~~~js
+var printFile = function(){
+    return new Promise(function(resolve, reject){
+        setTimeout(function(){
+            resolve("File is printed!"); // success
+            // reject("Fail"); // Failure
+        }, 3000);
+    });
+};
+
+var asyncAwai = async function(){
+    var job_1 = await printFile();
+    console.log(job_1);
+
+    var job_2 = await printFile();
+    console.log(job_2);
+};
+
+asyncAwai(); // prints out 2 messages after 3 sec interval.
+~~~
+
+~~~js
+// Fail
+var printFile = function(){
+    return new Promise(function(resolve, reject){
+        setTimeout(function(){
+            //resolve("File is printed!"); // success
+            reject("Fail"); // Failure
+        }, 3000);
+    });
+};
+
+var asyncAwai = async function(){
+    try{
+        var job_1 = await printFile();
+        console.log(job_1);
+
+        var job_2 = await printFile();
+        console.log(job_2);
+    }catch(err){
+        console.log(err);
+    }
+};
+
+asyncAwai(); // prints out 'Fail' after 3 sec.
+~~~
+
+#### Events
+~~~html
+<div onMouseOver="ev_on_mouse_over()">This is a div!</div>
+<button onClick="ev_on_button_click()">Submit</button>
+
+<script>
+ev_on_mouse_over = function(event){
+    console.log("Mouse OVer!");
+}
+</script>
 ~~~
