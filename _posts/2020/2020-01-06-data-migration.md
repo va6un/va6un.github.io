@@ -20,6 +20,9 @@ tags:
 > 2. LSMW
 > 3. BDC 
 
+> * Conversions - Conversion programs are used to transverse the data from file to SAP system.
+Conversion programs are BDC,LSMW
+
 #### Function Modules
 >  RFC - Remote Function Call
 > Tcode `SE37`

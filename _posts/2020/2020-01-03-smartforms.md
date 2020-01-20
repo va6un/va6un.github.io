@@ -11,6 +11,9 @@ tags:
 
 Transaction code for smart-forms is `smartforms`. 
 
+> * Forms are used to design the business documents such as offer letters, experience letters, pay bills etc.
+Forms are SAP Script, SMART forms.
+
 Form Interface: In Form-Interface -> `Tables`, we declare the internal tables 
 that we need to import.
 
