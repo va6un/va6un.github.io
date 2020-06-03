@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 {% include head.html %}
 
 <body>
-  <div class="container">
+    <div class="container">
+        {% include nav.html %}
 
-    {% include header.html %}
+        {{content }}
 
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <main>
-          {{ content }}
-        </main>
-      </div>
+        {% include script.html %}
     </div>
-
-    {% include footer.html %}
-
-  </div>
 </body>
 
 </html>
