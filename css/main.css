@@ -10,7 +10,7 @@ body{
     text-align: center;
 }
 .anim{
-    display: none;
+    display: inline;
 }
 a{
     color: inherit;

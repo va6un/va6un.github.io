@@ -1,5 +1,6 @@
 $(document).ready(function () {
     console.log("Document Ready!");
+    $(".anim").show(10, "swing");
     var api_key = "8459c322e00586940a5729ac6e3813f5";
     var user_id = "137579347%40N08";
     var photos_url = "https://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=" + api_key + "&user_id=" + user_id + "&format=json&nojsoncallback=1";
@@ -27,7 +28,7 @@ $(document).ready(function () {
                 //console.log('all images loaded');
             })
             .done(function (instance) {
-                $(".anim").hide(500, "swing");
+                $(".anim").hide(1500, "swing");
                 console.log('all images successfully loaded');
                 $grid.masonry({
                     // options...
@@ -43,7 +44,6 @@ $(document).ready(function () {
                 console.log('all images loaded, at least one is broken');
             })
             .progress(function (instance, image) {
-                $(".anim").show(10, "swing");
                 //var result = image.isLoaded ? 'loaded' : 'broken';
                 //console.log('image is ' + result + ' for ' + image.img.src);
             });
