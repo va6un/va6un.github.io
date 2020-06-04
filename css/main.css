@@ -9,7 +9,38 @@ body{
     color: rgba(102, 102, 102, 1);
     text-align: center;
 }
+.anim{
+    display: none;
+}
+a{
+    color: inherit;
+}
 
 p{
     font-size: 0.85rem;
 }
+
+.grid-sizer,
+.grid-item { width: 30%; margin-bottom: 10px; margin-left: 10px;}
+
+.flickr-img{
+    position: relative;
+}
+.flickr-title{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 0.75rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    word-break: break-word;
+}
+@media screen and (max-width: 360px) {
+    .grid-sizer, .grid-item{
+        width: 45%;
+    }
+    .flickr-title{
+        font-size: 0.65rem;
+    }
+}
+  

@@ -1,10 +1,9 @@
 # Site settings
-title: note book!
-email: va6un.b@gmail.com
-description: Personal Blog!!!
+title: Blog!
+description: Blog!
 url: https://va6un.github.io
 author: Varun Bhuvanendran
-footer: va6un.github.com
+
 
 # Build settings
 markdown: kramdown
