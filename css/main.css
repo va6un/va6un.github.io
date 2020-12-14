@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 body{
+  font-family: 'Ubuntu Mono', monospace;
+}
+.blog-bg-img{
+  background-image: url(https://live.staticflickr.com/1564/24375779681_77c6c8d308_c.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*body{
     background-color: #000;
     margin: 0 auto;
     padding: 0;
@@ -26,10 +34,10 @@ p{
 .grid-item { 
     width: 250px; 
     margin-bottom: 10px; 
-    /* margin-left: 10px; */ 
-}
+     margin-left: 10px;  
+}*/
 
-.flickr-img{
+/*.flickr-img{
     position: relative;
 }
 .flickr-title{
@@ -107,5 +115,5 @@ imageAnimation {  0% {
     .flickr-title{
         font-size: 0.65rem;
     }
-}
+}*/
   

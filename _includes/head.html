@@ -1,5 +1,40 @@
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{% if page.author %}{{ page.author }} | {{ site.author }}{% else %}{{ site.author }}{% endif %}">
+    <meta name="generator" content="Jekyll v4.0.0">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/"> -->
+
+    <!-- Bootstrap core CSS -->
+	<link href="{{ site.url }}/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="{{ site.url }}/css/cover.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css">
+  </head>
+
+  <!-- <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{% if page.author %}{{ page.author }} | {{ site.author }}{% else %}{{ site.author }}{% endif %}">
@@ -8,4 +43,4 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-</head>
+</head> -->
