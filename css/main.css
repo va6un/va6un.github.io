@@ -6,6 +6,7 @@ body{
   background-image: url(https://live.staticflickr.com/1564/24375779681_77c6c8d308_c.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 /*body{
     background-color: #000;
