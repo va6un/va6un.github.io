@@ -3,12 +3,12 @@ layout: default
 ---
 
 <main class="px-3">
-    <h6 class="text-muted mb-0">Kuthira Vilakku</h6>
+    <!-- <h6 class="text-muted mb-0">Kuthira Vilakku</h6> -->
 	<!-- <p class="lead">Kuthira Vilakku(horse lamp) seen inside Padmanabhapuram Palace, Kanyakumari.</p> -->
-	<p class="mb-0">
+	<!-- <p class="mb-0"> -->
   		<!-- <a href="https://en.wikipedia.org/wiki/Padmanabhapuram_Palace" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a> -->
-  		<a href="https://live.staticflickr.com/1564/24375779681_77c6c8d308_c.jpg" class="btn btn-link text-muted p-0">View full size</a>
-	</p>
+  		<!-- <a href="https://live.staticflickr.com/1564/24375779681_77c6c8d308_c.jpg" class="btn btn-link text-muted p-0">View full size</a> -->
+	<!-- </p> -->
 </main>
 
 <footer class="mt-auto text-white-50">
