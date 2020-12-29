@@ -4,6 +4,7 @@ $(document).ready(function () {
   "50728746451_f414e2d910_c.jpg",
   "50729120297_f998a33f18_c.jpg",
   "50729024376_7957ba2355_c.jpg",
+  "50776210611_d7f748a5c1_c.jpg",
   "50729120772_d8bd37efb4_c.jpg"
   ],
   base = "https://live.staticflickr.com/65535/",
@@ -26,11 +27,11 @@ function backgroundSequence() {
       if (k + 1 === bgImageArray.length) {
         setTimeout(function () {
           backgroundSequence();
-        }, secs * 3000);
+        }, secs * 1000);
       } else {
         k++;
       }
-    }, secs * 3000 * i);
+    }, secs * 1000 * i);
   }
 }
 backgroundSequence();
